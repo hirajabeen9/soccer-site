@@ -1,7 +1,3 @@
-Here's a description that highlights your understanding of HTML, CSS, and JavaScript along with a list of functionalities based on the JavaScript code you shared:
-
----
-
 ### Soccer Website - HTML5, CSS3, JavaScript
 
 This project is a soccer-themed website built using HTML5, CSS3, and JavaScript, designed to demonstrate an engaging user experience with dynamic content and interactivity. The site includes various functionalities to showcase upcoming matches, a ticket booking system, and a countdown to major events.
