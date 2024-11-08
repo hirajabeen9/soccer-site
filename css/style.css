@@ -501,6 +501,7 @@ form button:hover {
 .close-button:hover {
     background: #ce0722;
 }
+
 /* Confirmation button styling */
 .confirm-button {
     background-color: #28a745;
@@ -514,4 +515,117 @@ form button:hover {
 
 .confirm-button:hover {
     background-color: #218838;
+}
+
+/*RESPONSIVENESS*/
+/* Mobile First Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none;
+        /* Hide nav items initially */
+        flex-direction: column;
+        width: 100%;
+        background-color: #1e1e1e;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        background-color: #333 !important;
+    }
+
+    .navdiv {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .news-container,
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .blog-card,
+    .news-card {
+        flex: 1;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-ticket {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Tablet Adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-items {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .news-container,
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .book-ticket {
+        width: 75%;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .news-container,
+    .blog-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .book-ticket {
+        width: 60%;
+    }
 }
