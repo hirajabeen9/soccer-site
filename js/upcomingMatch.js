@@ -1,8 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Display matches on load
+    displayMatches();
+
+    // Attach event listeners for sorting and reversing
+    document.getElementById("sort-button").addEventListener("click", sortMatches);
+    document.getElementById("reverse-button").addEventListener("click", reverseMatches);
+});
+
 // Array of matches with date information
 let matches = [
     { teams: "Team A vs Team B", date: "2024-11-15" },
     { teams: "Team C vs Team D", date: "2024-11-18" },
     { teams: "Team E vs Team F", date: "2024-11-12" },
+    { teams: "Team G vs Team H", date: "2024-11-11" },
+    { teams: "Team I vs Team J", date: "2024-11-10" },
+    { teams: "Team K vs Team L", date: "2024-11-16" },
 ];
 
 // Function to format date
@@ -34,6 +46,3 @@ function reverseMatches() {
     matches.reverse();
     displayMatches();
 }
-
-// Initial display of matches
-displayMatches();
