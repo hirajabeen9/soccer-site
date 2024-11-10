@@ -1,5 +1,5 @@
 // Set the event date
-const eventDate = new Date("December 1, 2024 00:00:00").getTime();
+const eventDate = new Date("November 14, 2024 00:00:00").getTime();
 
 // Update the countdown every second
 const countdownInterval = setInterval(() => {
@@ -23,6 +23,6 @@ const countdownInterval = setInterval(() => {
     // If the countdown is over, clear the interval
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.querySelector(".countdown").innerHTML = "<p>Event Started</p>";
+        document.querySelector(".countdown").innerHTML = "<h2>Event Started</h2>";
     }
 }, 1000);

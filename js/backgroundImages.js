@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let currentImageIndex = 0;
-    const heroSection = document.querySelector('.hero-bg');
+    const heroSection = document.querySelector('.hero-bg'); //class
 
     // Function to change the background image
     function changeBackgroundImage() {
